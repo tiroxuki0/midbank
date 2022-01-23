@@ -1,0 +1,6 @@
+export const businessLoan = require('./businessLoan.png')
+export const personalLoan = require('./personalLoan.png')
+export const creditCard = require('./creditCard.png')
+export const deposit = require('./deposit.png')
+export const education = require('./education.png')
+export const mobileBanking = require('./mobileBanking.png')

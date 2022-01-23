@@ -1,0 +1,10 @@
+@import "./variables";
+.button {
+  @include blueButton;
+  border: none;
+  position: relative;
+}
+.greyText {
+  opacity: 0.6;
+  color: white;
+}

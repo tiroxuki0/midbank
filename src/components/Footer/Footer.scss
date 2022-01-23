@@ -1,0 +1,113 @@
+@import "../../sass/variables";
+.footer {
+  padding: 100px 0 50px 0;
+  &Left {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    h3 {
+    }
+    p {
+      max-width: 350px;
+      font-size: 16px;
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      $size: 45px;
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: $size;
+        height: $size;
+        border-radius: 100rem;
+        background-color: rgba(64, 50, 156, 0.2);
+        cursor: pointer;
+        &:nth-child(1) {
+          color: rgb(42, 133, 253);
+        }
+        &:nth-child(2) {
+          background-color: #fff;
+          color: rgb(255, 51, 0);
+        }
+        &:nth-child(3) {
+          color: rgb(100, 206, 241);
+        }
+        /* #bb2071 #d03f84 */
+        &:nth-child(4) {
+          width: 17px;
+          height: 17px;
+          border-radius: 100rem;
+          background-color: #d03f84;
+          color: #bb2071;
+          margin-left: 12px;
+          &:before {
+            content: "";
+            position: absolute;
+            width: $size;
+            height: $size;
+            border-radius: 100rem;
+            background-color: rgba(64, 50, 156, 0.2);
+          }
+        }
+      }
+    }
+  }
+  &Right {
+    .title {
+      margin-bottom: 30px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.noCopyright {
+  position: relative;
+  background-color: $black;
+  .row {
+    padding: 20px 10px;
+    .col {
+      font-size: 16px;
+      &:nth-child(1) {
+        span {
+          display: block;
+          width: 100%;
+          text-align: start;
+        }
+      }
+      &:nth-child(2) {
+        div {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .noCopyright {
+    .row {
+      .col {
+        &:nth-child(1) {
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

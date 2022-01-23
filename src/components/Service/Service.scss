@@ -1,0 +1,138 @@
+@import "../../sass/variables";
+.service {
+  position: relative;
+  padding: 70px 0px;
+  .spotlight {
+    width: 100%;
+    height: 100%;
+    border-radius: 100rem;
+    background: radial-gradient(
+      closest-side,
+      $yellow,
+      $rose,
+      $primary,
+      transparent
+    );
+    filter: blur(250px);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(40%, -70%);
+  }
+  &.grid.wide {
+    margin-top: 100px;
+  }
+  .row {
+    width: 100%;
+    margin: 0px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgb(0, 0, 0, 0.3) 0px 2px 24px;
+  }
+  &Top {
+    margin: 0px auto 30px;
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      @include greenToOrange;
+    }
+    .heading {
+      text-align: center;
+      font-size: $fszHeading;
+    }
+    p {
+      text-align: center;
+      opacity: 0.6;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $primary;
+  }
+  .swiper-button-prev {
+    left: 25px;
+  }
+  .swiper-button-next {
+    right: 25px;
+  }
+  .swiper-pagination-bullet {
+    background-color: white;
+    bottom: 20px;
+  }
+  &List {
+    .swiper {
+      padding: 20px 20px 50px 20px;
+    }
+  }
+  &Item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 310px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: inherit;
+      transform: translate(-50%, -50%) rotate(5deg);
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+    }
+    .image {
+      width: 100px;
+      height: 100px;
+      border-radius: 100rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+      }
+    }
+    .content {
+      h3 {
+        text-transform: capitalize;
+        margin-bottom: 12px;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        span {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 739px) {
+  .service {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+$primary: #0b0547;
+$black: #111125;
+$yellow: #eea153;
+$rose: rgba(205, 18, 59, 0.6);
+$purple: #53016b;
+$pink: #ff75e3;
+$borderColor: #4d457b;
+$highBlue: #0643c3;
+$blue: #7f98fe;
+$lightblue: #8aefff;
+$green: #bdffb1;
+$orange: #f78789;
+$purple: #b985ff;
+$yellow: #fecba9;
+$fszHeading: 44px;
+$fszTitle: 24px;
+$fszText: 18px;
+
+@mixin blueButton {
+  background: linear-gradient(#3975f2, #0643c3);
+  color: white;
+  border-radius: 100rem;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@mixin gradientBlue {
+  background-image: linear-gradient(to bottom, #4261e8, #7f98fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@mixin gradientLightBlue {
+  background-image: linear-gradient(to bottom, #0fddff, #8aefff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@mixin gradientOrange {
+  background-image: linear-gradient(to bottom, #f04546, #f78789);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@mixin gradientPurple {
+  background-image: linear-gradient(to bottom, #6404e9, #b985ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@mixin gradientYellow {
+  background-image: linear-gradient(to bottom, #f68e48, #fecba9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+@mixin greenToOrange {
+  background-image: linear-gradient(to right, #63b8b1, #f99838);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase;
+}
