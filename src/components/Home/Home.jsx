@@ -14,6 +14,7 @@ function Home(){
   },[])
 
   return<section className="home grid wide">
+    <div className="spotlight"></div>
     <div className="row">
       <div className="col l-6 m-6 c-12">
         <div className="image">
@@ -25,7 +26,7 @@ function Home(){
             <div className="circle"></div>
             <div className="circle"></div>
           </div>
-          <div className="spotlight"></div>
+          
         </div>
       </div>
       <div className="col l-6 m-6 c-12">

@@ -17,15 +17,14 @@
     }
   }
   .spotlight {
-    width: calc(100% * 2);
-    height: calc(100% * 2);
-    border-radius: 100rem;
-    background: radial-gradient(closest-side, $rose, $primary, transparent);
-    filter: blur(200px);
+    width: 300px;
+    height: 200%;
+    background: radial-gradient(closest-side, $rose, $primary);
+    filter: blur(150px);
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translate(-60%, -45%);
+    top: 0;
+    transform: translateX(-45%);
   }
   .content {
     width: 100%;

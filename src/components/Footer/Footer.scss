@@ -98,6 +98,15 @@
     }
   }
 }
+@media (max-width: 739px) {
+  .footer {
+    &Left,
+    &Right {
+      padding-left: 10px;
+    }
+  }
+}
+
 @media (max-width: 450px) {
   .noCopyright {
     .row {
