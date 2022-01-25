@@ -11,6 +11,7 @@
     right: 0;
     top: 0;
     transform: translate(0%, -20%);
+    z-index: -1;
   }
   &.grid.wide {
     margin-top: 100px;
