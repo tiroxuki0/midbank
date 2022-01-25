@@ -50,8 +50,8 @@
           &::before {
             content: "";
             position: absolute;
-            width: 50px;
-            height: 50px;
+            width: 100%;
+            height: 100%;
             border-radius: 100rem;
             background: radial-gradient(
               closest-side,
@@ -151,6 +151,30 @@
     position: relative;
     .image {
       opacity: 0.3;
+      img {
+        width: 90%;
+        height: 90%;
+      }
+      .circleLayers {
+        .circle {
+          & > .icon {
+            width: 30px;
+            height: 30px;
+          }
+          &:nth-child(1) {
+            width: 80%;
+            height: 80%;
+          }
+          &:nth-child(2) {
+            width: 90%;
+            height: 90%;
+          }
+          &:nth-child(3) {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
     }
     .content {
       padding-left: 10px;
