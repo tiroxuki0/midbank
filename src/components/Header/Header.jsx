@@ -37,6 +37,19 @@ function Header(){
   const [callSignUp, setCallSignUp] = useState(0)
   useEffect(()=>{
     $$('.headerMenu a')[1].classList.add('active')
+
+    const handleScroll = () =>{
+      if(window.scrollY >= 50){
+        $('.header').classList.add('fixed')
+      }else{
+        $('.header').classList.remove('fixed')
+      }
+    }
+
+    window.addEventListener('scroll',handleScroll)
+    return () =>{
+      window.removeEventListener('scroll',handleScroll)
+    }
   },[])
 
   function removeActive(){

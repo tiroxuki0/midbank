@@ -3,8 +3,20 @@
 .header {
   padding: 20px 0px;
   border-bottom: 1px solid $borderColor;
-  position: relative;
-
+  position: fixed;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  transition: all 0.2s linear;
+  background-color: $primary;
+  z-index: 14;
+  &.grid.wide {
+    &.fixed {
+      z-index: 1000;
+      max-width: 100vw;
+      padding: 20px;
+    }
+  }
   .planet {
     background-image: url("../../assets/planet.png");
     background-size: cover;
@@ -127,7 +139,7 @@
     .col {
       &:nth-child(3) {
         display: flex;
-        position: fixed;
+        position: absolute;
         right: 0;
         top: 0;
         background-color: #fff;
