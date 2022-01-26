@@ -188,3 +188,16 @@
     }
   }
 }
+@media (max-width: 739px) {
+  .header {
+    .planet {
+      transform: scale(0.7) translateY(-10%);
+      animation: rotate 10s linear infinite;
+    }
+    @keyframes rotate {
+      to {
+        transform: translateY(-10%) scale(0.7) rotate(360deg);
+      }
+    }
+  }
+}
