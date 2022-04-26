@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/midbank/static/css/main.3675bb33.css",
+    "main.js": "/midbank/static/js/main.770c9268.js",
+    "static/js/787.ef95c229.chunk.js": "/midbank/static/js/787.ef95c229.chunk.js",
+    "static/media/mastercard.png": "/midbank/static/media/mastercard.69e47a8a17845afca7f1.png",
+    "static/media/card.png": "/midbank/static/media/card.5060e3ed17218342b28a.png",
+    "static/media/CTA.png": "/midbank/static/media/CTA.43393d5a45a7ca91b6a8.png",
+    "static/media/planet.png": "/midbank/static/media/planet.9f99eb9b7f46d58c26c8.png",
+    "static/media/apple-brands.svg": "/midbank/static/media/apple-brands.3e208bda7fa6a756d88427e0eb2123f7.svg",
+    "index.html": "/midbank/index.html",
+    "static/media/facebook-brands.svg": "/midbank/static/media/facebook-brands.033c50dd0b16de1fef2a20dfe6e465d4.svg",
+    "static/media/google-brands.svg": "/midbank/static/media/google-brands.77a59cd88e6533df0df28f698714b1bd.svg",
+    "main.3675bb33.css.map": "/midbank/static/css/main.3675bb33.css.map",
+    "main.770c9268.js.map": "/midbank/static/js/main.770c9268.js.map",
+    "787.ef95c229.chunk.js.map": "/midbank/static/js/787.ef95c229.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3675bb33.css",
+    "static/js/main.770c9268.js"
+  ]
+}
